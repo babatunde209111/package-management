@@ -97,6 +97,7 @@ systemctl start kubelet
 systemctl enable kubelet.service
 
 #Copy kubeadm join token from the master and execute in Worker Nodes to join to cluster
+#Use this cmd: kubeadm token create --print-join-command
 # replace this token with yours
 
 kubeadm join 10.0.0.11:6443 --token 03em5o.agjpy9wbj98izbpn \
